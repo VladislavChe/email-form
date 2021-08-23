@@ -2,66 +2,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erbi</title>
+  <title>Форма обратной связи</title>
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
-  <meta name="description" content="Вещи с Европы" />
-  <meta name="keywords" content="Доставка вещей с Европы" />
-  <!-- Favicon-->
-  <link rel="icon" href="img/logo.png" type="image/x-icon" />
-  <link rel="shortcut icon" href="img/ilustration.ico" type="image/x-icon" />
-  <!-- /Favicon-->
+  <meta name="description" content="Форма обратной связи" />
+  <meta name="keywords" content="Форма обратной связи" />
 
   <!-- OG Tags-->
-  <meta property="og:title" content="Вещи с Европы" />
-  <meta
-    property="og:description"
-    content="Вещи с Европы, доставка вещей с Европы"
-  />
+  <meta property="og:title" content="Форма обратной связи" />
+  <meta property="og:description" content="Форма обратной связи" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="#" />
-  <meta property="og:site_name" content="Erbi" />
+  <meta property="og:site_name" content="Форма обратной связи" />
   <!-- /OG Tags-->
 
   <!-- Adaptability-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- /Adaptability-->
 
-  <!-- Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&amp;display=swap"
-    rel="stylesheet"
-  />
-  <!-- /Fonts-->
-
   <!-- CSS styles-->
-  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/main.css" />
   <!-- /CSS styles-->
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container"></div>
-  </header>
-  <!-- /Header -->
-  <section class="section" id="section1">
-    <div class="container"></div>
-  </section>
-  <section class="section" id="section2">
-    <div class="container"></div>
-  </section>
-  <!-- Footer -->
-  <footer class="footer" id="footer">
-    <div class="container"></div>
-  </footer>
-  <!-- /Footer -->
+  <div class="wrapper">
+    <div class="form">
+      <form action="#" id="form" class="form__body">
+        <h2 class="form__title">Отправка данных на почту</h2>
+        <div class="form__item">
+          <label for="formName" class="form__label">Имя*:</label>
+          <input id="formName" type="text" name="name" class="form__input" />
+          <label for="formEmail" class="form__label">E-mail*:</label>
+          <input id="formEmail" type="text" name="email" class="form__input" />
+          <div class="form__item">
+            <div class="form__label">Левша или правша?</div>
+            <div class="options">
+              <div class="options__item">
+                <input
+                  id="formRightHanded"
+                  class="options__input"
+                  value="right"
+                  type="radio"
+                  name="hand"
+                  checked
+                />
+                <label for="formRightHanded" class="options__label"
+                  >Правша</label
+                >
+              </div>
+              <div class="options__item">
+                <input
+                  id="formLeftHanded"
+                  class="options__input"
+                  value="left"
+                  type="radio"
+                  name="hand"
+                />
+                <label for="formLefttHanded" class="options__label"
+                  >Левша</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="formMessege" class="form__label">Сообщение:</label>
+            <textarea
+              name="message"
+              id="formMessage"
+              class="form__input"
+            ></textarea>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Возраст:</div>
+            <select name="age" class="select">
+              <option value="от 18 до 25" selected>Молодой</option>
+              <option value="от 25 до 45">Старый</option>
+              <option value="от 45">Супер стар</option>
+            </select>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Прикрепить фото</div>
+            <div class="file">
+              <div class="file__item">
+                <input
+                  id="formImage"
+                  class="file__input"
+                  accept=".jpg, .png, .gif"
+                  type="file"
+                  name="image"
+                />
+                <div class="file__button">Выбрать</div>
+              </div>
+              <div class="file__preview"></div>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
+              <input
+                id="formAgreement"
+                class="checkbox__input"
+                type="checkbox"
+                name="agreement"
+                checked
+              />
+              <label class="checkbox__label" for="formAgreement"
+                >Я даю согласие на обработку персональных данных в соответсвии с
+                условиями</label
+              >
+            </div>
+          </div>
+          <button type="submit" class="form__button">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
   <!-- JS Scripts -->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
