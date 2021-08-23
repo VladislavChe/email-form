@@ -33,9 +33,19 @@
         <h2 class="form__title">Отправка данных на почту</h2>
         <div class="form__item">
           <label for="formName" class="form__label">Имя*:</label>
-          <input id="formName" type="text" name="name" class="form__input" />
+          <input
+            id="formName"
+            type="text"
+            name="name"
+            class="form__input _req"
+          />
           <label for="formEmail" class="form__label">E-mail*:</label>
-          <input id="formEmail" type="text" name="email" class="form__input" />
+          <input
+            id="formEmail"
+            type="text"
+            name="email"
+            class="form__input _req _email"
+          />
           <div class="form__item">
             <div class="form__label">Левша или правша?</div>
             <div class="options">
@@ -95,14 +105,14 @@
                 />
                 <div class="file__button">Выбрать</div>
               </div>
-              <div class="file__preview"></div>
+              <div id="formPreview" class="file__preview"></div>
             </div>
           </div>
           <div class="form__item">
             <div class="checkbox">
               <input
                 id="formAgreement"
-                class="checkbox__input"
+                class="checkbox__input _req"
                 type="checkbox"
                 name="agreement"
                 checked
