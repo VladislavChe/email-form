@@ -11,7 +11,7 @@
   $mail->IsHTML(true);
 
   //От кого письмо
-  $mail->setFrom('from@example.com', 'Mailer');
+  $mail->setFrom('dev@mail.ru', 'Mailer');
   //Кому отправить
   $mail->addAddress('cheremisin0610@mail.ru', 'Joe User'); //Добавить получателя
   //Тема письма
