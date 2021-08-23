@@ -1,0 +1,137 @@
+/*Basic-START*/
+body *,
+body *:before,
+body *:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+div,
+textarea,
+p,
+input,
+form,
+span,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 24px;
+}
+address,
+blockquote,
+figure,
+figcaption,
+main,
+details,
+fieldset {
+  display: block;
+  border: 0;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+a {
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none !important;
+  transition: all 0.5s ease;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease;
+  color: none !important;
+}
+button,
+input {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  list-style-type: none;
+  transition: all 0.5s ease;
+}
+button:active,
+input:active,
+button:hover,
+input:hover,
+button:focus,
+input:focus {
+  outline: none;
+  transition: all 0.5s ease;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input,
+li {
+  list-style-type: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+/*Basic-END*/
+
+/*Responsive*/
+/* 992px - 1200px */
+@media screen and (max-width: 1199px) {
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 991px) {
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 767px) {
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+}
