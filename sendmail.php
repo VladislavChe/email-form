@@ -40,6 +40,9 @@
   if(trim(!empty($_POST['email']))) {
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
   }
+  if(trim(!empty($_POST['phone_number']))) {
+    $body.='<p><strong>Телефон:</strong> '.$_POST['phone_number'].'</p>';
+  }
   if(trim(!empty($_POST['hand']))) {
     $body.='<p><strong>Рука:</strong> '.$hand.'</p>';
   }

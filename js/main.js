@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
           formAddError(input);
           error++;
         }
+      } else if (input.classList.contains('_phone')) {
+        if (phoneTest(input)) {
+          formAddError(input);
+          error++;
+        }
       } else if (
         input.getAttribute('type') === 'checkbox' &&
         input.checked === false
@@ -71,6 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
   //Функция теста email
   function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+  }
+  //Функция теста валидности телефона
+  function phoneTest(input) {
+    return !/(^(?!.*$)(?!_$)([+0-9]{1}([0-9]{0,1})?([-]{0,1})?([(]{0,1})?9[0-9]{2}[)0-9]{1}[-0-9]{1}[0-9]{3}[-0-9]{1}[0-9]{1,2}([-]{0,1})?([0-9]{0,2})?)$)|(^[+0-9]{1}([0-9]{0,1})?([(-0-9]{0,1})?([(0-9]{0,1})?([0-9]{0,2})?([)0-9]{0,1})?([)-0-9]{0,1})?([-0-9]{0,1})?([0-9]{0,2})?([-0-9]{0,2})?([0-9]{0,1})?([-0-9]{0,2})?([0-9]{0,2})?( [(0-9]{1})?([0-9]{2,3})?([)]{0,1})?([-]{0,1})?([0-9]{0,3})?([-]{0,1})?([0-9]{0,4})?( [0-9]{3})?([-]{0,1})?([0-9]{0,2})?([-]{0,1})?([0-9]{0,2})?( [0-9]{2,4})?( [0-9]{2})?$)/.test(
+      input.value
+    );
   }
 
   // Превью фотографии
