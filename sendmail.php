@@ -72,6 +72,7 @@
     $message = 'Ошибка';
   }else {
     $message = 'Данные отправлены';
+    //header('location: thank-you.html')
   }
 
   $response = ['message' => $message];
