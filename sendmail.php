@@ -12,14 +12,14 @@
 
   
   //Server settings
-  $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'cheremisin0610@yandex.ru'; // Логин на почте
-  $mail->Password   = 'Vladislav78AAs8'; // Пароль на почте
+  $mail->Host       = 'phpmailer.vladislav-che.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'bhx20198@phpmailer.vladislav-che.ru'; // Логин на почте
+  $mail->Password   = '.MH-j+G8Kn02'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
   //От кого письмо
-  $mail->setFrom('cheremisin0610@yandex.ru', 'Mailer');
+  $mail->setFrom('bhx20198@phpmailer.vladislav-che.ru', 'Mailer');
   //Кому отправить
   $mail->addAddress('cheremisin0610@gmail.com', 'Joe User'); //Добавить получателя
   //Тема письма
