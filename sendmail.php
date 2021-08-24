@@ -10,10 +10,18 @@
   $mail->setLanguage('ru', 'phpmailer/language/');
   $mail->IsHTML(true);
 
+  
+  //Server settings
+  $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'cheremisin0610@yandex.ru'; // Логин на почте
+  $mail->Password   = 'Vladislav78AAs8'; // Пароль на почте
+  $mail->SMTPSecure = 'ssl';
+  $mail->Port       = 465;
+
   //От кого письмо
-  $mail->setFrom('dev@mail.ru', 'Mailer');
+  $mail->setFrom('cheremisin0610@yandex.ru', 'Mailer');
   //Кому отправить
-  $mail->addAddress('cheremisin0610@mail.ru', 'Joe User'); //Добавить получателя
+  $mail->addAddress('cheremisin0610@gmail.com', 'Joe User'); //Добавить получателя
   //Тема письма
   $mail->Subject = 'Here is the subject';
 
